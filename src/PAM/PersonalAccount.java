@@ -28,9 +28,9 @@ public class PersonalAccount {
     }
 
     public void printTransactionHistory(){
-        for (int i=0;i<transactions.length; i++) {
-            System.out.println(transactions[i].transactionType);
-            System.out.print(transactions[i].amount);
+        for (int i=0;i<transactions.size(); i++) {
+            System.out.print(transactions.get(i).TransactionType);
+            System.out.println(transactions.get(i).amount);
         }
     }
 
